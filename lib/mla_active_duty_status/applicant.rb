@@ -18,7 +18,9 @@ module MlaActiveDutyStatus
     end
 
     def get_mla_status
-
+      exception_message = 'MLA Active Duty Status failure: Invalid applicant data. Review instance validation errors.'
+      raise(MlaActiveDutyStatus::Error.new('MLA Active Duty Status failure'), exception_message, caller) unless self.valid?
+      MlaActiveDutyStatus::Client.get_status(self)
     end
 
     private
