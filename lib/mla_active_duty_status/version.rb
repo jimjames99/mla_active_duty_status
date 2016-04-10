@@ -1,3 +1,3 @@
-module MlaActiveDutyStatus
+class MlaActiveDutyStatus
   VERSION = '0.1.0'
 end

@@ -31,3 +31,34 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rake', '~> 10.0'
   spec.add_development_dependency 'minitest', '~> 5.0'
 end
+
+
+# mla = MLA.new(last_name: 'JAMES',
+#   first_name: 'xx',
+#   middle_name: 'xx',
+#   ssn: '614058902',
+#   dob: '1960-01-25')
+# if mla.valid?
+#   # wrap this in a minion...
+#   valid, military_status, pdf, error = mla.perform
+# else
+#   puts mla.errors
+# end
+# or put it on a minion
+# required: last_name, ssn, dob
+# valid boolean, true if no problems and known military_status is returned.
+# military_status returns
+# 0 = neither applicant nor spouse are active duty
+# 1 = applicant or spouse appears active duty
+# pdf return binary object
+# error returns text like:
+# service timeout
+# service not available
+# SSN not present or not well formed
+# date not valid or missing
+# last_name blank
+
+# Config
+# dob to be in last 100 years or config date.
+# PDF parser?
+# URL of service
