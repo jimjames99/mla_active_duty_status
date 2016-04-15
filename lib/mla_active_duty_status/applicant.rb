@@ -3,12 +3,16 @@ module MlaActiveDutyStatus
 
     attr_accessor :errors
 
-    def initialize(last_name:, first_name: nil, middle_name: nil, ssn:, date_of_birth:)
+    attr_reader :last_name, :first_name, :middle_name, :ssn, :date_of_birth, :date_of_birth_usa
+
+    def initialize(last_name:, first_name: nil, middle_name: nil, ssn:, date_of_birth:, tracking_number: nil)
       @last_name = last_name.to_s.strip
       @first_name = first_name.to_s.strip
       @middle_name = middle_name.to_s.strip
       @ssn = ssn.to_s.strip.gsub(/\D/, '')
       @date_of_birth = date_of_birth
+      @date_of_birth_usa = nil
+      @tracking_number = tracking_number
       @errors = []
       validate_args
     end
@@ -21,6 +25,10 @@ module MlaActiveDutyStatus
       exception_message = 'MLA Active Duty Status failure: Invalid applicant data. Review instance validation errors.'
       raise(MlaActiveDutyStatus::Error.new('MLA Active Duty Status failure'), exception_message, caller) unless self.valid?
       MlaActiveDutyStatus::Client.get_status(self)
+    end
+
+    def file_format
+      sprintf('%9s', @ssn) + @date_of_birth.strftime('%Y%m%d') + sprintf('%-26.26s', @last_name) + sprintf('%-20.20s', @first_name) + sprintf('%-20.20s', @middle_name) + sprintf('%-28.28s', @tracking_number)
     end
 
     private
@@ -42,8 +50,8 @@ module MlaActiveDutyStatus
 
     def validate_date_of_birth
       @date_of_birth = Date.parse(@date_of_birth.to_s)
-      puts "CHECK: #{MlaActiveDutyStatus.configuration.max_years_for_age_check}"
       errors << "date_of_birth must be within #{MlaActiveDutyStatus.configuration.max_years_for_age_check} years" if @date_of_birth < (Date.today << (MlaActiveDutyStatus.configuration.max_years_for_age_check * 12))
+      @date_of_birth_usa = @date_of_birth.strftime('%m/%d/%Y')
     rescue ArgumentError
       errors << 'date_of_birth not valid date'
     end

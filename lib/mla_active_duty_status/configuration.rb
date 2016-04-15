@@ -15,7 +15,7 @@ module MlaActiveDutyStatus
   end
 
   class Configuration
-    attr_accessor :mla_single_record_url, :max_years_for_age_check,
+    attr_accessor :mla_host, :mla_path, :max_years_for_age_check,
       :pool_size,
       :warn_timeout,
       :open_timeout,
@@ -25,7 +25,8 @@ module MlaActiveDutyStatus
 
     def initialize
       @max_years_for_age_check = 100
-      @mla_single_record_url = 'https://mla.dmdc.osd.mil/single_record.xhtml'
+      @mla_host = 'mla.dmdc.osd.mil'
+      @mla_path = '/mla/single_record.xhtml'
       @pool_size = 10
       @warn_timeout = 0.25
       @open_timeout = 30
