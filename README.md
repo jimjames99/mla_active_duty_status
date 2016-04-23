@@ -57,7 +57,10 @@ mla.errors
 
 Get the active duty status of the applicant:
 
-`mla.active_duty_status`
+````
+mla.active_duty_status
+````
+
 This returns an array of 2 values:
 * status:
 
