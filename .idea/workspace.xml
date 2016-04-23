@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="058866b6-264d-495e-b4ea-94afdcb2d9dc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/client_test.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/response_test.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/mla_active_duty_status.iml" afterPath="$PROJECT_DIR$/.idea/mla_active_duty_status.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/example.pdf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/mla_active_duty_status/client.rb" afterPath="$PROJECT_DIR$/lib/mla_active_duty_status/client.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mla_active_duty_status.gemspec" afterPath="$PROJECT_DIR$/mla_active_duty_status.gemspec" />
     </list>
     <ignored path="mla_active_duty_status.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,8 +36,8 @@
       <file leaf-file-name="mla_active_duty_status.gemspec" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mla_active_duty_status.gemspec">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+            <state relative-caret-position="617">
+              <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="43" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -64,13 +63,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="response_test.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="response_test.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/response_test.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="323">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="422">
+              <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="Gfm">
+            <state />
           </provider>
         </entry>
       </file>
@@ -168,7 +183,6 @@
         <option value="$PROJECT_DIR$/test/applicant_test.rb" />
         <option value="$PROJECT_DIR$/lib/mla_active_duty_status/error.rb" />
         <option value="$PROJECT_DIR$/lib/mla_active_duty_status/mla_client.rb" />
-        <option value="$PROJECT_DIR$/mla_active_duty_status.gemspec" />
         <option value="$PROJECT_DIR$/lib/mla_active_duty_status/applicant.rb" />
         <option value="$PROJECT_DIR$/lib/mla_active_duty_status.rb" />
         <option value="$PROJECT_DIR$/lib/mla_active_duty_status/configuration.rb" />
@@ -176,6 +190,8 @@
         <option value="$PROJECT_DIR$/test/client_test.rb" />
         <option value="$PROJECT_DIR$/test/response_test.rb" />
         <option value="$PROJECT_DIR$/lib/mla_active_duty_status/response.rb" />
+        <option value="$PROJECT_DIR$/mla_active_duty_status.gemspec" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -186,7 +202,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1102" />
+    <option name="x" value="433" />
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="1338" />
@@ -516,7 +532,7 @@
       <workItem from="1460258948503" duration="15000" />
       <workItem from="1460259030270" duration="41490000" />
       <workItem from="1461242047040" duration="115000" />
-      <workItem from="1461242191245" duration="10273000" />
+      <workItem from="1461242191245" duration="11116000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit.">
       <created>1460260398287</created>
@@ -581,7 +597,14 @@
       <option name="project" value="LOCAL" />
       <updated>1461446273030</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="add tests.">
+      <created>1461449388263</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1461449388263</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -617,10 +640,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51893000" />
+    <option name="totallyTimeSpent" value="52736000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1102" y="23" width="1440" height="1338" extended-state="0" />
+    <frame x="433" y="23" width="1440" height="1338" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="GfmBrowser" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -630,7 +653,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.55108607" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.55108607" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -664,7 +687,8 @@
     <MESSAGE value="refactored a few times." />
     <MESSAGE value="remove logging to stdout." />
     <MESSAGE value="remove old net::http configs." />
-    <option name="LAST_COMMIT_MESSAGE" value="remove old net::http configs." />
+    <MESSAGE value="add tests." />
+    <option name="LAST_COMMIT_MESSAGE" value="add tests." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -872,14 +896,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mla_active_duty_status.gemspec">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/mla_active_duty_status/configuration.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -930,10 +946,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/response_test.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="323">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mla_active_duty_status.gemspec">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="617">
+          <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="43" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="Gfm">
+        <state />
       </provider>
     </entry>
   </component>

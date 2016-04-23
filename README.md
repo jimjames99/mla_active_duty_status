@@ -1,8 +1,8 @@
 # MlaActiveDutyStatus
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/mla_active_duty_status`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+The Military Lending Act requires lenders in certain situations to check the active duty status of the loan applicant. 
+This gem screenscrapes the MLA website providing the applicant details and returning a coded response for the active duty status
+and the MLA PDF certificate.
 
 ## Installation
 
@@ -14,7 +14,7 @@ gem 'mla_active_duty_status'
 
 And then execute:
 
-    $ bundle
+    $ bundle install
 
 Or install it yourself as:
 
@@ -22,13 +22,35 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+The MLA requires the following details:
+* last_name (required)
+* first_name 
+* middle_name
+* ssn (required)
+* dob (required)
 
-## Development
+Create an applicant object:
+`mla = MlaActiveDutyStatus::Applicant.new(last_name: 'Doolittle', first_name: 'Alfred', middle_name: 'A', ssn: '614223456', date_of_birth: '1950-01-25')`
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+Check that the applicant details meet requirements:
+`mla.valid?`
+This returns `true` or `false` and you can view any validation errors:
+`mla.errors`
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+Get the active duty status of the applicant:
+`mal.active_duty_status`
+This returns an array of 2 values:
+* status:
+**  0 = neither applicant nor spouse are active duty
+** 1 = applicant or spouse appears active duty
+** 7 = MLA service timeout or error
+** 9 = invalid or missing required fields
+
+* pdf - a binary string of the Certificate
+
+Notice that if you try to gt the status of an applicant whose details are not sufficient, you get a 9 response immediately.
+
+Response times are typically 1.0 - 3.0 seconds.
 
 ## Contributing
 

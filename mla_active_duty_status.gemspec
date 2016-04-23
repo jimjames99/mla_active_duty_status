@@ -64,6 +64,4 @@ end
 # date not valid or missing
 # last_name blank
 
-# Config
-# dob to be in last 100 years or config date.
-# PDF parser?
+
