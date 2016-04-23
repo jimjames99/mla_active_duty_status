@@ -1,8 +1,11 @@
 # MlaActiveDutyStatus
 
 The Military Lending Act requires lenders in certain situations to check the active duty status of the loan applicant. 
-This gem screenscrapes the MLA website providing the applicant details and returning a coded response for the active duty status
+This gem screenscrapes the MLA website providing the applicant details and returns a coded response for the active duty status
 and the MLA PDF certificate.
+
+Please note the MLA may change their site at any time, rendering this gem useless. 
+Also usage is at your own risk.
 
 ## Installation
 
