@@ -50,7 +50,10 @@ mla.valid?
 ````
 This returns `true` or `false` and you can view any validation errors:
 
-`mla.errors`
+````
+mla.errors
+=> ["date_of_birth must be within 100 years"]
+````
 
 Get the active duty status of the applicant:
 
