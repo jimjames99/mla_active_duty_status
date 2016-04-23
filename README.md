@@ -35,7 +35,12 @@ The MLA requires the following details:
 Create an applicant object:
 
 ````
-mla = MlaActiveDutyStatus::Applicant.new(last_name: 'Doolittle', first_name: 'Alfred', middle_name: 'A', ssn: '614223456', date_of_birth: '1950-01-25')
+mla = MlaActiveDutyStatus::Applicant.new(
+  last_name: 'Doolittle', 
+  first_name: 'Alfred', 
+  middle_name: 'A', 
+  ssn: '614223456', 
+  date_of_birth: '1950-01-25')
 ````
 
 Check that the applicant details meet requirements:
