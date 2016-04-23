@@ -6,26 +6,11 @@ module MlaActiveDutyStatus
 
     include SemanticLogger::Loggable
 
-    def self.rails_env
-      if defined?(Rails)
-        Rails.env
-      else
-        'development'
+    def self.call_mla_site(mla)
+      agent = Mechanize.new do |agent|
+        agent.open_timeout = 3
+        agent.read_timeout = 3
       end
-    end
-
-    def self.get_status(mla)
-      logger.measure_info '#mla_active_duty_status', metric: 'supplier/mla/active_duty_status' do
-        @results = get_status_data(mla)
-      end
-      @results
-    end
-
- #   private
-
-    def self.get_status_data(mla)
-      start = Time.now
-      agent = Mechanize.new
       host = MlaActiveDutyStatus.configuration.mla_host
       path = MlaActiveDutyStatus.configuration.mla_path
       page = agent.get("https://#{host}#{path}")
@@ -37,15 +22,13 @@ module MlaActiveDutyStatus
       mla_form.firstName = mla.first_name
       mla_form.middleName = mla.first_name
       page = agent.submit(mla_form, mla_form.buttons[1])
-      page.save_as page.filename
-      puts "Saved as #{page.filename}"
+      # page.save_as page.filename
+      # puts "Saved as #{page.filename}"
       pdf = page.body
-      status = Response.parse_response(pdf)
-    rescue Exception => e
-    ensure
-      elapsed = Time.now - start
-      return mla.valid?, status, pdf, e
+      return Response.parse_response(pdf), 'PDF GOES HERE' # pdf
     end
 
   end
 end
+
+# mla = MlaActiveDutyStatus::Applicant.new(last_name: 'Doolittle', first_name: 'Gordon', middle_name: 'A', ssn: '614058902', date_of_birth: '1960-01-25')

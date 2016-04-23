@@ -1,5 +1,11 @@
+require 'semantic_logger'
+
 module MlaActiveDutyStatus
   class Applicant
+
+    include SemanticLogger::Loggable
+
+    SemanticLogger.add_appender(io: $stdout)
 
     attr_accessor :errors
 
@@ -14,17 +20,23 @@ module MlaActiveDutyStatus
       @date_of_birth_usa = nil
       @tracking_number = tracking_number
       @errors = []
-      validate_args
     end
 
     def valid?
+      validate_args
       errors.empty?
     end
 
-    def get_mla_status
-      exception_message = 'MLA Active Duty Status failure: Invalid applicant data. Review instance validation errors.'
-      raise(MlaActiveDutyStatus::Error.new('MLA Active Duty Status failure'), exception_message, caller) unless self.valid?
-      MlaActiveDutyStatus::Client.get_status(self)
+    def active_duty_status
+      logger.measure_info '#mla_active_duty_status', metric: 'supplier/mla/active_duty_status' do
+        if !self.valid?
+          return status = MLA_INVALID, pdf = nil
+          exit
+        end
+        status, pdf = MlaActiveDutyStatus::Client.call_mla_site(self)
+      end
+    rescue Timeout::Error
+      return status = MLA_ERROR, pdf = nil
     end
 
     def file_format
