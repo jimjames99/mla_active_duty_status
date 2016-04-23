@@ -6,12 +6,7 @@ class ClientTest < Minitest::Test
 
     # Makes a live call so it needs internet access.
     def test_actual_call
-      mla = MlaActiveDutyStatus::Applicant.new(
-        last_name: 'Doolittle',
-        first_name: 'Alfred',
-        middle_name: 'A',
-        ssn: '614223456',
-        date_of_birth: '1950-01-25')
+      mla = MlaActiveDutyStatus::Applicant.new('James', nil, nil, '123456789', '1950-02-02', nil)
       assert_equal MlaActiveDutyStatus::MLA_NOT_ACTIVE_DUTY, mla.active_duty_status.first
     end
 
