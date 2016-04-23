@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="058866b6-264d-495e-b4ea-94afdcb2d9dc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Rakefile" afterPath="$PROJECT_DIR$/Rakefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/client_test.rb" afterPath="$PROJECT_DIR$/test/client_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/mla_active_duty_status/applicant.rb" afterPath="$PROJECT_DIR$/lib/mla_active_duty_status/applicant.rb" />
     </list>
     <ignored path="mla_active_duty_status.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -52,7 +52,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="client_test.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="client_test.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/client_test.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
@@ -78,8 +78,8 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <state relative-caret-position="561">
+              <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -148,11 +148,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="applicant.rb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="applicant.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/mla_active_duty_status/applicant.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+            <state relative-caret-position="289">
+              <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -191,7 +191,6 @@
         <option value="$PROJECT_DIR$/test/applicant_test.rb" />
         <option value="$PROJECT_DIR$/lib/mla_active_duty_status/error.rb" />
         <option value="$PROJECT_DIR$/lib/mla_active_duty_status/mla_client.rb" />
-        <option value="$PROJECT_DIR$/lib/mla_active_duty_status/applicant.rb" />
         <option value="$PROJECT_DIR$/lib/mla_active_duty_status.rb" />
         <option value="$PROJECT_DIR$/lib/mla_active_duty_status/configuration.rb" />
         <option value="$PROJECT_DIR$/lib/mla_active_duty_status/client.rb" />
@@ -199,9 +198,10 @@
         <option value="$PROJECT_DIR$/lib/mla_active_duty_status/response.rb" />
         <option value="$PROJECT_DIR$/mla_active_duty_status.gemspec" />
         <option value="$PROJECT_DIR$/.travis.yml" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/Rakefile" />
         <option value="$PROJECT_DIR$/test/client_test.rb" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/lib/mla_active_duty_status/applicant.rb" />
       </list>
     </option>
   </component>
@@ -212,7 +212,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="433" />
+    <option name="x" value="772" />
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="1338" />
@@ -244,24 +244,7 @@
     <panes>
       <pane id="Scratches" />
       <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mla_active_duty_status" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mla_active_duty_status" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mla_active_duty_status" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
+        <subPane />
       </pane>
       <pane id="Scope" />
     </panes>
@@ -559,7 +542,7 @@
       <workItem from="1460258948503" duration="15000" />
       <workItem from="1460259030270" duration="41490000" />
       <workItem from="1461242047040" duration="115000" />
-      <workItem from="1461242191245" duration="12886000" />
+      <workItem from="1461242191245" duration="13222000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit.">
       <created>1460260398287</created>
@@ -736,7 +719,21 @@
       <option name="project" value="LOCAL" />
       <updated>1461452398640</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="try this for travis (and me).">
+      <created>1461452777477</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1461452777477</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Carp! Can't use named arguments!!">
+      <created>1461453005699</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1461453005699</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -772,14 +769,14 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54506000" />
+    <option name="totallyTimeSpent" value="54842000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="433" y="23" width="1440" height="1338" extended-state="0" />
+    <frame x="772" y="23" width="1440" height="1338" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="GfmBrowser" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25250357" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25250357" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -828,7 +825,9 @@
     <MESSAGE value="add travis badge." />
     <MESSAGE value="add mla website." />
     <MESSAGE value="skip problematic test on travis." />
-    <option name="LAST_COMMIT_MESSAGE" value="skip problematic test on travis." />
+    <MESSAGE value="try this for travis (and me)." />
+    <MESSAGE value="Carp! Can't use named arguments!!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Carp! Can't use named arguments!!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1020,14 +1019,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/mla_active_duty_status/applicant.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/mla_active_duty_status/configuration.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -1092,20 +1083,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="Gfm">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Rakefile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -1118,6 +1095,28 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="Gfm">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/mla_active_duty_status/applicant.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
           <folding />
         </state>
       </provider>

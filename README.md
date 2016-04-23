@@ -31,10 +31,11 @@ Or install it yourself as:
 
 The MLA requires the following details:
 * last_name (required)
-* first_name 
-* middle_name
+* first_name (optional)
+* middle_name (optional)
 * ssn (required)
 * dob (required)
+* tracking_number that will be embedded in the Certificate (optional)
 
 Create an applicant object:
 
