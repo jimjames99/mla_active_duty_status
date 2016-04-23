@@ -6,7 +6,6 @@ class ClientTest < Minitest::Test
 
     # Makes a live call so it needs internet access.
     def test_actual_call
-      skip 'not working on travis'
       mla = MlaActiveDutyStatus::Applicant.new(
         last_name: 'Doolittle',
         first_name: 'Alfred',
