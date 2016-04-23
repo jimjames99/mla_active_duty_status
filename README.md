@@ -33,14 +33,18 @@ The MLA requires the following details:
 * dob (required)
 
 Create an applicant object:
+
 `mla = MlaActiveDutyStatus::Applicant.new(last_name: 'Doolittle', first_name: 'Alfred', middle_name: 'A', ssn: '614223456', date_of_birth: '1950-01-25')`
 
 Check that the applicant details meet requirements:
+
 `mla.valid?`
 This returns `true` or `false` and you can view any validation errors:
+
 `mla.errors`
 
 Get the active duty status of the applicant:
+
 `mal.active_duty_status`
 This returns an array of 2 values:
 * status:
