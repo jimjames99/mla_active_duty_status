@@ -74,13 +74,12 @@ This returns an array of 2 values:
 
 * pdf - a binary string of the Certificate
 
-Notice that if you try to gt the status of an applicant whose details are not sufficient, you get a 9 response immediately.
 
-Response times are typically 1.0 - 3.0 seconds.
+Response times are typically 1.0 - 3.0 seconds. This gem does not maintain a persistent connection for multiple requests.
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/mla_active_duty_status. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/jimjames99/mla_active_duty_status. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 
 ## License
