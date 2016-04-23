@@ -34,11 +34,15 @@ The MLA requires the following details:
 
 Create an applicant object:
 
-`mla = MlaActiveDutyStatus::Applicant.new(last_name: 'Doolittle', first_name: 'Alfred', middle_name: 'A', ssn: '614223456', date_of_birth: '1950-01-25')`
+````
+mla = MlaActiveDutyStatus::Applicant.new(last_name: 'Doolittle', first_name: 'Alfred', middle_name: 'A', ssn: '614223456', date_of_birth: '1950-01-25')
+````
 
 Check that the applicant details meet requirements:
 
-`mla.valid?`
+````
+mla.valid?
+````
 This returns `true` or `false` and you can view any validation errors:
 
 `mla.errors`
@@ -50,8 +54,11 @@ This returns an array of 2 values:
 * status:
 
     0 = neither applicant nor spouse are active duty
+    
     1 = applicant or spouse appears active duty
+    
     7 = MLA service timeout or error
+    
     9 = invalid or missing required fields
 
 * pdf - a binary string of the Certificate
