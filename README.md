@@ -50,9 +50,9 @@ This returns an array of 2 values:
 * status:
 
     0 = neither applicant nor spouse are active duty
-1 = applicant or spouse appears active duty
-7 = MLA service timeout or error
-9 = invalid or missing required fields
+    1 = applicant or spouse appears active duty
+    7 = MLA service timeout or error
+    9 = invalid or missing required fields
 
 * pdf - a binary string of the Certificate
 
