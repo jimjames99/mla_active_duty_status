@@ -6,6 +6,8 @@ The Military Lending Act requires lenders in certain situations to check the act
 This gem screenscrapes the MLA website providing the applicant details and returns a coded response for the active duty status
 and the MLA PDF certificate.
 
+MLA website:  `https://mla.dmdc.osd.mil`
+
 Please note the MLA may change their site at any time, rendering this gem useless. 
 Also usage is at your own risk.
 
