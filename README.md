@@ -45,13 +45,14 @@ This returns `true` or `false` and you can view any validation errors:
 
 Get the active duty status of the applicant:
 
-`mal.active_duty_status`
+`mla.active_duty_status`
 This returns an array of 2 values:
 * status:
-**  0 = neither applicant nor spouse are active duty
-** 1 = applicant or spouse appears active duty
-** 7 = MLA service timeout or error
-** 9 = invalid or missing required fields
+
+    0 = neither applicant nor spouse are active duty
+1 = applicant or spouse appears active duty
+7 = MLA service timeout or error
+9 = invalid or missing required fields
 
 * pdf - a binary string of the Certificate
 
