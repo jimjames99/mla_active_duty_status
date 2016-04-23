@@ -1,5 +1,7 @@
 # MlaActiveDutyStatus
 
+![Travis badge](https://travis-ci.org/jimjames99/mla_active_duty_status.svg?branch=master)
+
 The Military Lending Act requires lenders in certain situations to check the active duty status of the loan applicant. 
 This gem screenscrapes the MLA website providing the applicant details and returns a coded response for the active duty status
 and the MLA PDF certificate.
