@@ -5,8 +5,6 @@ module MlaActiveDutyStatus
 
     include SemanticLogger::Loggable
 
-    SemanticLogger.add_appender(io: $stdout)
-
     attr_accessor :errors
 
     attr_reader :last_name, :first_name, :middle_name, :ssn, :date_of_birth, :date_of_birth_usa
