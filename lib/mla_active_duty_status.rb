@@ -9,8 +9,8 @@ module MlaActiveDutyStatus
 
   self.configure
   MLA_NOT_ACTIVE_DUTY = 0 # neither applicant nor spouse are active duty
-  MLA_ACTIVE_DUTY = 1     # applicant or spouse appears active duty
-  MLA_ERROR = 7           # MLA service timeout or error
-  MLA_INVALID = 9         # invalid or missing required fields
+  MLA_ACTIVE_DUTY     = 1 # applicant or spouse appears active duty
+  MLA_ERROR           = 7 # MLA service timeout or error
+  MLA_INVALID         = 9 # invalid or missing required fields
 
 end
