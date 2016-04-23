@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="058866b6-264d-495e-b4ea-94afdcb2d9dc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/mla_active_duty_status/applicant.rb" afterPath="$PROJECT_DIR$/lib/mla_active_duty_status/applicant.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/applicant_test.rb" afterPath="$PROJECT_DIR$/test/applicant_test.rb" />
     </list>
     <ignored path="mla_active_duty_status.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -18,10 +17,10 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/mla_active_duty_status@Run_test__MlaActiveDutyStatusTest___mla_active_duty_status.coverage" NAME="Run test 'MlaActiveDutyStatusTest': mla_active_duty_status Coverage Results" MODIFIED="1461446143757" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" MODULE_NAME="mla_active_duty_status" />
+    <SUITE FILE_PATH="coverage/mla_active_duty_status@Run_test__MlaActiveDutyStatusTest___mla_active_duty_status.coverage" NAME="Run test 'MlaActiveDutyStatusTest': mla_active_duty_status Coverage Results" MODIFIED="1461455829115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" MODULE_NAME="mla_active_duty_status" />
     <SUITE FILE_PATH="coverage/mla_active_duty_status@IRB_console__mla_active_duty_status.coverage" NAME="IRB console: mla_active_duty_status Coverage Results" MODIFIED="1460264021879" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="mla_active_duty_status" />
     <SUITE FILE_PATH="coverage/mla_active_duty_status@Run_test__ResponseTest___mla_active_duty_status.coverage" NAME="Run test 'ResponseTest': mla_active_duty_status Coverage Results" MODIFIED="1461449333742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" MODULE_NAME="mla_active_duty_status" />
-    <SUITE FILE_PATH="coverage/mla_active_duty_status@Run_test__ClientTest___mla_active_duty_status.coverage" NAME="Run test 'ClientTest': mla_active_duty_status Coverage Results" MODIFIED="1461447109908" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" MODULE_NAME="mla_active_duty_status" />
+    <SUITE FILE_PATH="coverage/mla_active_duty_status@Run_test__ClientTest___mla_active_duty_status.coverage" NAME="Run test 'ClientTest': mla_active_duty_status Coverage Results" MODIFIED="1461455854868" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" MODULE_NAME="mla_active_duty_status" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -55,8 +54,8 @@
       <file leaf-file-name="client_test.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/client_test.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+            <state relative-caret-position="255">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -118,11 +117,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="applicant_test.rb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="applicant_test.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/applicant_test.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="36" />
+            <state relative-caret-position="85">
+              <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -148,7 +147,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="applicant.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="applicant.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/mla_active_duty_status/applicant.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
@@ -188,7 +187,6 @@
       <list>
         <option value="$PROJECT_DIR$/test/mla_active_duty_status_test.rb" />
         <option value="$PROJECT_DIR$/lib/mla_active_duty_status/version.rb" />
-        <option value="$PROJECT_DIR$/test/applicant_test.rb" />
         <option value="$PROJECT_DIR$/lib/mla_active_duty_status/error.rb" />
         <option value="$PROJECT_DIR$/lib/mla_active_duty_status/mla_client.rb" />
         <option value="$PROJECT_DIR$/lib/mla_active_duty_status.rb" />
@@ -199,9 +197,10 @@
         <option value="$PROJECT_DIR$/mla_active_duty_status.gemspec" />
         <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/Rakefile" />
-        <option value="$PROJECT_DIR$/test/client_test.rb" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/lib/mla_active_duty_status/applicant.rb" />
+        <option value="$PROJECT_DIR$/test/applicant_test.rb" />
+        <option value="$PROJECT_DIR$/test/client_test.rb" />
       </list>
     </option>
   </component>
@@ -253,7 +252,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../connect/components/suppliers/email_age" />
   </component>
-  <component name="RunManager" selected="Test::Unit/Shoulda/Minitest.Run test 'ResponseTest': mla_active_duty_status">
+  <component name="RunManager" selected="Test::Unit/Shoulda/Minitest.Run test 'ClientTest': mla_active_duty_status">
     <configuration default="false" name="IRB console: mla_active_duty_status" type="IrbRunConfigurationType" factoryName="IRB console" temporary="true">
       <module name="mla_active_duty_status" />
       <IRB_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -519,9 +518,9 @@
     </list>
     <recent_temporary>
       <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.Run test 'ResponseTest': mla_active_duty_status" />
-        <item index="1" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.Run test 'ClientTest': mla_active_duty_status" />
-        <item index="2" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.Run test 'MlaActiveDutyStatusTest': mla_active_duty_status" />
+        <item index="0" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.Run test 'ClientTest': mla_active_duty_status" />
+        <item index="1" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.Run test 'MlaActiveDutyStatusTest': mla_active_duty_status" />
+        <item index="2" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.Run test 'ResponseTest': mla_active_duty_status" />
         <item index="3" class="java.lang.String" itemvalue="IRB console.IRB console: mla_active_duty_status" />
       </list>
     </recent_temporary>
@@ -542,7 +541,7 @@
       <workItem from="1460258948503" duration="15000" />
       <workItem from="1460259030270" duration="41490000" />
       <workItem from="1461242047040" duration="115000" />
-      <workItem from="1461242191245" duration="13222000" />
+      <workItem from="1461242191245" duration="13494000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit.">
       <created>1460260398287</created>
@@ -733,15 +732,29 @@
       <option name="project" value="LOCAL" />
       <updated>1461453005699</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Don't be clever with the args.">
+      <created>1461453231531</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1461453231531</updated>
+    </task>
+    <task id="LOCAL-00029" summary="fix tests.">
+      <created>1461455871129</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1461455871129</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Run_test_'ResponseTest'__mla_active_duty_status - 2016.04.23 at 17h 45m 43s.xml">
-      <configuration name="Run test 'ResponseTest': mla_active_duty_status" configurationId="TestUnitRunConfigurationType" />
+    <history-entry file="Run_test_'ClientTest'__mla_active_duty_status - 2016.04.23 at 19h 57m 38s.xml">
+      <configuration name="Run test 'ClientTest': mla_active_duty_status" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="Run_test_'ResponseTest'__mla_active_duty_status - 2016.04.23 at 17h 56m 57s.xml">
-      <configuration name="Run test 'ResponseTest': mla_active_duty_status" configurationId="TestUnitRunConfigurationType" />
+    <history-entry file="Run_test_'MlaActiveDutyStatusTest'__mla_active_duty_status - 2016.04.23 at 19h 57m 09s.xml">
+      <configuration name="Run test 'MlaActiveDutyStatusTest': mla_active_duty_status" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
     <history-entry file="Run_test_'ResponseTest'__mla_active_duty_status - 2016.04.23 at 18h 00m 03s.xml">
       <configuration name="Run test 'ResponseTest': mla_active_duty_status" configurationId="TestUnitRunConfigurationType" />
@@ -769,7 +782,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54842000" />
+    <option name="totallyTimeSpent" value="55114000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="772" y="23" width="1440" height="1338" extended-state="0" />
@@ -782,7 +795,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.55108607" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.55108607" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -827,7 +840,9 @@
     <MESSAGE value="skip problematic test on travis." />
     <MESSAGE value="try this for travis (and me)." />
     <MESSAGE value="Carp! Can't use named arguments!!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Carp! Can't use named arguments!!" />
+    <MESSAGE value="Don't be clever with the args." />
+    <MESSAGE value="fix tests." />
+    <option name="LAST_COMMIT_MESSAGE" value="fix tests." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1027,14 +1042,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/applicant_test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/mla_active_duty_status.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -1091,14 +1098,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/client_test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
@@ -1117,6 +1116,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/client_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/applicant_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
           <folding />
         </state>
       </provider>
