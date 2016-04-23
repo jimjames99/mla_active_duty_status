@@ -48,11 +48,11 @@ Check that the applicant details meet requirements:
 ````
 mla.valid?
 ````
-This returns `true` or `false` and you can view any validation errors:
+This returns `true` or `false` and then you can view any validation errors:
 
 ````
 mla.errors
-=> ["date_of_birth must be within 100 years"]
+=> ["last_name must be present", "date_of_birth must be within 100 years"]
 ````
 
 Get the active duty status of the applicant:
