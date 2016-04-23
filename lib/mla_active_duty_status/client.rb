@@ -22,13 +22,9 @@ module MlaActiveDutyStatus
       mla_form.firstName = mla.first_name
       mla_form.middleName = mla.first_name
       page = agent.submit(mla_form, mla_form.buttons[1])
-      # page.save_as page.filename
-      # puts "Saved as #{page.filename}"
       pdf = page.body
-      return Response.parse_response(pdf), 'PDF GOES HERE' # pdf
+      return Response.parse_response(pdf), pdf
     end
 
   end
 end
-
-# mla = MlaActiveDutyStatus::Applicant.new(last_name: 'Doolittle', first_name: 'Gordon', middle_name: 'A', ssn: '614058902', date_of_birth: '1960-01-25')
