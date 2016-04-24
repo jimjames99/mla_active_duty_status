@@ -10,7 +10,10 @@ module MlaActiveDutyStatus
       agent = Mechanize.new do |agent|
         agent.open_timeout = 3
         agent.read_timeout = 3
+        agent.log = Logger.new('mechlog.log')
+        agent.user_agent_alias = 'Mac Firefox'
       end
+      agent.agent.http.verify_mode = OpenSSL::SSL::VERIFY_NONE # unless MlaActiveDutyStatus.configuration.ssl_verify
       host = MlaActiveDutyStatus.configuration.mla_host
       path = MlaActiveDutyStatus.configuration.mla_path
       page = agent.get("https://#{host}#{path}")

@@ -15,12 +15,14 @@ module MlaActiveDutyStatus
   end
 
   class Configuration
-    attr_accessor :mla_host, :mla_path, :max_years_for_age_check
+    attr_accessor :mla_host, :mla_path, :max_years_for_age_check, :ssl_verify, :ca_path
 
     def initialize
       @max_years_for_age_check = 100
       @mla_host = 'mla.dmdc.osd.mil'
       @mla_path = '/mla/single_record.xhtml'
+      @ssl_verify = true
+      @ca_path = ''
     end
 
   end

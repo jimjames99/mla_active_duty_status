@@ -1,6 +1,6 @@
 # MlaActiveDutyStatus
 
-![Travis badge](https://travis-ci.org/jimjames99/mla_active_duty_status.svg?branch=master)
+![Travis badge](https://travis-ci.org/jimjames99/mla_active_duty_status.svg?branch=master) Tested on ruby 2.3.0 and jruby 1.7.
 
 The Military Lending Act requires lenders in certain situations to check the active duty status of the loan applicant. 
 This gem uses [Mechanize](https://github.com/sparklemotion/mechanize) to screenscrape the MLA website providing the applicant details and returns a coded response for the active duty status
@@ -9,7 +9,7 @@ and the MLA PDF certificate.
 MLA website:  `https://mla.dmdc.osd.mil`
 
 Please note the MLA may change their site at any time, rendering this gem useless. 
-Also usage is at your own risk.
+Usage is at your own risk.
 
 ## Installation
 
@@ -28,6 +28,8 @@ Or install it yourself as:
     $ gem install mla_active_duty_status
 
 ## Usage
+
+This gem can be run from the console with `rake console`.
 
 The MLA requires the following details:
 * last_name (required)
@@ -80,11 +82,39 @@ This returns an array of 2 values:
 * pdf - a binary string of the Certificate
 
 
-Response times are typically 1.0 - 3.0 seconds. This gem does not maintain a persistent connection for multiple requests.
+Response times are typically 1.0 - 3.0 seconds. This gem does not maintain a persistent connection across Rails' 
+requests because Mechanize is not threadsafe. A future version will probably drop Mechanize for a 
+pure [HTTP::Net::Persistent](http://docs.seattlerb.org/net-http-persistent/) implementation.
+
+## Rubies
+
+Currently tested against MRI 2.3.0 but anything > 1.9.2 should work.
+
+Known issue with jruby: https://github.com/sparklemotion/mechanize/issues/209
+
+## Certificates
+
+The MLA site is part of the DoD and uses site certificates that you might not ordinarily have installed.
+
+The MLA has [instructions for installing certificates](https://mla.dmdc.osd.mil/faq.xhtml#Q1), 
+but you will most likely need to download the cert file to your production server and point to it like this:
+
+````
+MlaActiveDutyStatus.configuration.ca_path = '/path/to/my/ca_cert.crt'
+````
+
+It is highly recommended that you do NOT disable certificate verification, but if you need to debug a problem 
+then set the configuration like this:
+
+````
+MlaActiveDutyStatus.configuration.ssl_verify = false
+````
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/jimjames99/mla_active_duty_status. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/jimjames99/mla_active_duty_status. 
+This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to 
+the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 
 ## License
