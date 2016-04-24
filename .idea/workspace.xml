@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="058866b6-264d-495e-b4ea-94afdcb2d9dc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/applicant_test.rb" afterPath="$PROJECT_DIR$/test/applicant_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/client_test.rb" afterPath="$PROJECT_DIR$/test/client_test.rb" />
     </list>
     <ignored path="mla_active_duty_status.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,11 +51,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="client_test.rb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="client_test.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/client_test.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="204">
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -117,7 +117,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="applicant_test.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="applicant_test.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/applicant_test.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
@@ -541,7 +541,7 @@
       <workItem from="1460258948503" duration="15000" />
       <workItem from="1460259030270" duration="41490000" />
       <workItem from="1461242047040" duration="115000" />
-      <workItem from="1461242191245" duration="13494000" />
+      <workItem from="1461242191245" duration="13620000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit.">
       <created>1460260398287</created>
@@ -746,7 +746,14 @@
       <option name="project" value="LOCAL" />
       <updated>1461455871129</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="fix tests.">
+      <created>1461455885050</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1461455885050</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -782,7 +789,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55114000" />
+    <option name="totallyTimeSpent" value="55240000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="772" y="23" width="1440" height="1338" extended-state="0" />
@@ -1120,18 +1127,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/client_test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/applicant_test.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/client_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
