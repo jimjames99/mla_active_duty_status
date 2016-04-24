@@ -6,7 +6,8 @@ class ClientTest < Minitest::Test
 
     # Makes a live call so it needs internet access.
     def test_actual_call
-      skip # travis cannot handle this without certs. Uncomment locally.
+      skip if ENV['TRAVIS'] # travis cannot handle this without certs.
+      # TODO check that release and prod have certs.
       mla = MlaActiveDutyStatus::Applicant.new('James', nil, nil, '123456789', '1950-02-02', nil)
       assert_equal MlaActiveDutyStatus::MLA_NOT_ACTIVE_DUTY, mla.active_duty_status.first
     end
