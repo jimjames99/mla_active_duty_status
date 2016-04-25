@@ -13,7 +13,11 @@ module MlaActiveDutyStatus
         agent.log = Logger.new('mechlog.log')
         agent.user_agent_alias = 'Mac Firefox'
       end
-      browser.agent.http.verify_mode = OpenSSL::SSL::VERIFY_NONE if !MlaActiveDutyStatus.configuration.ssl_verify
+      if MlaActiveDutyStatus.configuration.ssl_verify
+        browser.agent.http.verify_mode = OpenSSL::SSL::VERIFY_PEER
+      else
+        browser.agent.http.verify_mode = OpenSSL::SSL::VERIFY_NONE
+      end
       host = MlaActiveDutyStatus.configuration.mla_host
       path = MlaActiveDutyStatus.configuration.mla_path
       page = browser.get("https://#{host}#{path}")
