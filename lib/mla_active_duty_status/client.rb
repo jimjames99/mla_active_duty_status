@@ -10,7 +10,9 @@ module MlaActiveDutyStatus
       browser = Mechanize.new do |agent|
         agent.open_timeout = 3
         agent.read_timeout = 3
-        agent.log = Logger.new('mechlog.log')
+        log = Logger.new('mechlog.log')
+        log.level = Logger::DEBUG
+        agent.log = log
         agent.user_agent_alias = 'Mac Firefox'
       end
       if MlaActiveDutyStatus.configuration.ssl_verify
@@ -18,6 +20,11 @@ module MlaActiveDutyStatus
       else
         browser.agent.http.verify_mode = OpenSSL::SSL::VERIFY_NONE
       end
+      cert_store = OpenSSL::X509::Store.new
+      ca_path = File.expand_path(MlaActiveDutyStatus.configuration.ca_path)
+      cert_store.add_file ca_path
+      browser.agent.http.cert_store = cert_store
+      browser.agent.http.debug_output = $stdout
       host = MlaActiveDutyStatus.configuration.mla_host
       path = MlaActiveDutyStatus.configuration.mla_path
       page = browser.get("https://#{host}#{path}")

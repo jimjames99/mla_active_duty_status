@@ -90,7 +90,8 @@ pure [HTTP::Net::Persistent](http://docs.seattlerb.org/net-http-persistent/) imp
 
 Currently tested against MRI 2.3.0 but anything > 1.9.2 should work.
 
-Known issue with jruby: https://github.com/sparklemotion/mechanize/issues/209
+Known [issue with jruby](https://github.com/sparklemotion/mechanize/issues/209) but the gem monkeypatches 
+a fix until the issue is available in Mechanize.
 
 ## Certificates
 
@@ -102,6 +103,8 @@ but you will most likely need to download the cert file to your production serve
 ````
 MlaActiveDutyStatus.configuration.ca_path = '/path/to/my/ca_cert.crt'
 ````
+
+By default, this gem will use this certificates path: `"#{ENV['JAVA_HOME']}/jre/lib/security/cacerts"`
 
 It is highly recommended that you do NOT disable certificate verification, but if you need to debug a problem 
 then set the configuration like this:

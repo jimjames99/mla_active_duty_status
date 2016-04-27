@@ -22,7 +22,7 @@ module MlaActiveDutyStatus
       @mla_host = 'mla.dmdc.osd.mil'
       @mla_path = '/mla/single_record.xhtml'
       @ssl_verify = true
-      @ca_path = ''
+      @ca_path = "#{ENV['JAVA_HOME']}/jre/lib/security/cacerts"
     end
 
   end
