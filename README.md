@@ -1,6 +1,7 @@
 # MlaActiveDutyStatus
 
 ![Travis badge](https://travis-ci.org/jimjames99/mla_active_duty_status.svg?branch=master) Tested on ruby 2.3.0 and jruby 1.7.
+[![Gem Version](https://badge.fury.io/rb/mla_active_duty_status.svg)](https://badge.fury.io/rb/mla_active_duty_status)
 
 The Military Lending Act requires lenders in certain situations to check the active duty status of the loan applicant. 
 This gem uses [Mechanize](https://github.com/sparklemotion/mechanize) to screenscrape the MLA website providing the applicant details and returns a coded response for the active duty status
