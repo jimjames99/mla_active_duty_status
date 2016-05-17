@@ -9,7 +9,7 @@ module MlaActiveDutyStatus
 
     attr_reader :last_name, :first_name, :middle_name, :ssn, :date_of_birth, :date_of_birth_usa
 
-    def initialize(last_name, first_name, middle_name, ssn, date_of_birth, tracking_number)
+    def initialize(last_name, first_name, middle_name, ssn, date_of_birth, tracking_number=nil)
       @last_name = last_name.to_s.strip
       @first_name = first_name.to_s.strip
       @middle_name = middle_name.to_s.strip
