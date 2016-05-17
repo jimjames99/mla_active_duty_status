@@ -9,14 +9,13 @@ module MlaActiveDutyStatus
 
     attr_reader :last_name, :first_name, :middle_name, :ssn, :date_of_birth, :date_of_birth_usa
 
-    def initialize(last_name, first_name, middle_name, ssn, date_of_birth, tracking_number=nil)
+    def initialize(last_name, first_name, middle_name, ssn, date_of_birth)
       @last_name = last_name.to_s.strip
       @first_name = first_name.to_s.strip
       @middle_name = middle_name.to_s.strip
       @ssn = ssn.to_s.strip.gsub(/\D/, '')
       @date_of_birth = date_of_birth
       @date_of_birth_usa = nil
-      @tracking_number = tracking_number
       @errors = []
     end
 
@@ -38,7 +37,7 @@ module MlaActiveDutyStatus
     end
 
     def file_format
-      sprintf('%9s', @ssn) + @date_of_birth.strftime('%Y%m%d') + sprintf('%-26.26s', @last_name) + sprintf('%-20.20s', @first_name) + sprintf('%-20.20s', @middle_name) + sprintf('%-28.28s', @tracking_number)
+      sprintf('%9s', @ssn) + @date_of_birth.strftime('%Y%m%d') + sprintf('%-26.26s', @last_name) + sprintf('%-20.20s', @first_name) + sprintf('%-20.20s', @middle_name) + sprintf('%-28.28s', '')
     end
 
     private

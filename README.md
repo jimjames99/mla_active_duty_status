@@ -39,7 +39,6 @@ The MLA requires the following details:
 * middle_name (optional)
 * ssn (required)
 * dob (required)
-* tracking_number that will be embedded in the Certificate (optional)
 
 Create an applicant object:
 
