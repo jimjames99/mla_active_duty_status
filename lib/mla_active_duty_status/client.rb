@@ -33,7 +33,7 @@ module MlaActiveDutyStatus
       mla_form.dateOfBirth = mla.date_of_birth_usa
       mla_form.lastName = mla.last_name
       mla_form.firstName = mla.first_name
-      mla_form.middleName = mla.first_name
+      mla_form.middleName = mla.middle_name
       page = browser.submit(mla_form, mla_form.buttons[1])
       pdf = page.body
       return Response.parse_response(pdf), pdf
