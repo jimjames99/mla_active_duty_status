@@ -18,9 +18,10 @@ module MlaActiveDutyStatus
       if MlaActiveDutyStatus.configuration.ssl_verify
         browser.agent.http.verify_mode = OpenSSL::SSL::VERIFY_PEER
         cert_store = OpenSSL::X509::Store.new
-        ca_path = File.expand_path(MlaActiveDutyStatus.configuration.ca_path)
-        cert_store.add_file ca_path
-        browser.agent.http.cert_store = cert_store
+        if ca_path = File.expand_path(MlaActiveDutyStatus.configuration.ca_path)
+          cert_store.add_file ca_path
+          browser.agent.http.cert_store = cert_store
+        end
       else
         browser.agent.http.verify_mode = OpenSSL::SSL::VERIFY_NONE
       end

@@ -100,7 +100,7 @@ but you will most likely need to download the cert file to your production serve
 MlaActiveDutyStatus.configuration.ca_path = '/path/to/my/ca_cert.crt'
 ```
 
-By default, this gem will use this certificates path: `"#{ENV['JAVA_HOME']}/jre/lib/security/cacerts"`
+By default, this gem will use the java keystore on jruby.
 
 It is highly recommended that you do NOT disable certificate verification, but if you need to debug a problem 
 then set the configuration like this:
