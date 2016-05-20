@@ -8,17 +8,20 @@ module MlaActiveDutyStatus
 
     def self.call_mla_site(mla)
       browser = Mechanize.new do |agent|
-        agent.open_timeout = 3
-        agent.read_timeout = 3
-        log = Logger.new('mechlog.log')
-        log.level = Logger::DEBUG
-        agent.log = log
+        agent.open_timeout = MlaActiveDutyStatus.configuration.open_timeout
+        agent.read_timeout = MlaActiveDutyStatus.configuration.read_timeout
+        if MlaActiveDutyStatus.configuration.logging || (defined?(Rails) && Rails.env.development?)
+          log = Logger.new('mechlog.log')
+          log.level = Logger::DEBUG
+          agent.log = log
+        end
         agent.user_agent_alias = 'Mac Firefox'
       end
       if MlaActiveDutyStatus.configuration.ssl_verify
         browser.agent.http.verify_mode = OpenSSL::SSL::VERIFY_PEER
         cert_store = OpenSSL::X509::Store.new
-        if ca_path = File.expand_path(MlaActiveDutyStatus.configuration.ca_path)
+        if MlaActiveDutyStatus.configuration.ca_path
+          ca_path = File.expand_path(MlaActiveDutyStatus.configuration.ca_path)
           cert_store.add_file ca_path
           browser.agent.http.cert_store = cert_store
         end
@@ -27,6 +30,7 @@ module MlaActiveDutyStatus
       end
       host = MlaActiveDutyStatus.configuration.mla_host
       path = MlaActiveDutyStatus.configuration.mla_path
+      browser.get("https://#{host}")
       page = browser.get("https://#{host}#{path}")
       mla_form = page.form('myForm')
       mla_form.ssn = mla.ssn

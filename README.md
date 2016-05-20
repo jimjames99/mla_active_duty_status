@@ -109,6 +109,29 @@ then set the configuration like this:
 MlaActiveDutyStatus.configuration.ssl_verify = false
 ```
 
+## Configuration
+
+Set value for configuration:
+```ruby
+MlaActiveDutyStatus.configuration.logging = true
+```
+
+* max_years_for_age_check - Ages older than this will be flagged as invalid.
+
+* logging - if true or in Rails development environment will log to a local file called mechlog.log
+
+Defaults:
+```ruby
+@max_years_for_age_check = 100
+@mla_host = 'mla.dmdc.osd.mil'
+@mla_path = '/mla/single_record.xhtml'
+@ssl_verify = true
+@ca_path = nil
+@logging = false
+@open_timeout = 10
+@read_timeout = 10
+```
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/jimjames99/mla_active_duty_status. 
